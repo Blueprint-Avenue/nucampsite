@@ -1,7 +1,3 @@
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-});
-
 $(function() {
     $(".carousel").carousel( { interval: 2000 } );
     $("#carouselButton").click(function(){
@@ -15,5 +11,21 @@ $(function() {
             $("#carouselButton").children("i").addClass("fa-pause");
         }
     });
+
+// });
+
+// $(document).ready(function(){
+    $("#reserveButton").click(function(){
+        // shows modal
+        $("#reserveModal").modal('show');
+    });
+        // Hides the modal
+         $(".close").click(function(){
+             $("#reserveButton").modal("hide");
+         });
+         $("#loginButton").click(function(){
+            // shows modal
+            $("#loginModal").modal('show');
+        });
 
 });
